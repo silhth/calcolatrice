@@ -18,13 +18,13 @@ function calculator(numbers) {
         const powEach = () => numbers.map(num => num * num);
         const sqrt = () => numbers.map(num => Math.sqrt(num));
 
-        if (numbers.length === 1) throw "errore: Hai passato un solo valore"
+        if (numbers.length === 1 && operator[0] !== '**each' && operator[0] !== 'sqrt') throw "errore: Hai passato un solo valore"
         if (numbers.length === 0) throw "Nessun parametro passato alla funzione"
 
         return {
             sum: sum(),
             sub: sub(),
-            mol: mul(),
+            mul: mul(),
             div: div(),
             pow: pow(),
             powEach: powEach(),
@@ -129,8 +129,8 @@ recap.addEventListener("click", (eve) => {
     if (operator[0] === '-') {log.innerHTML = resutls.sub }
     if (operator[0] === '*') {log.innerHTML =resutls.mul}
     if (operator[0] === '/') { log.innerHTML =resutls.div }
-    if (operator[0] === 'pow') { log.innerHTML = resutls.pow }
-    if (operator[0] === 'powEach') { log.innerHTML = resutls.powEach }
+    if (operator[0] === '**') { log.innerHTML = resutls.pow }
+    if (operator[0] === '**each') { log.innerHTML = resutls.powEach }
     if (operator[0] === 'sqrt') { log.innerHTML = resutls.sqrt}
 
 })
