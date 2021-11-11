@@ -46,20 +46,41 @@ function calculator(numbers) {
 
 }
 
-function addNum (num, arr) {
-    num.addEventListener('click', (e) => {
-    arr.push (parseInt(num.textContent))
-   
+function addNum (numberBtn, arr) {
+    
+    numberBtn.addEventListener('click', (e) => {
+        
+        arr.push (parseInt(numberBtn.textContent));
+        console.log(arr);
+      
 }
 )
 }
 
+
 function addOper (operators) {
     operators.addEventListener('click', (e) => {
+    arrNumbers.push(parseInt(arrNums.join('')));
+    console.log(arrNumbers)
+    arrNums.splice(0,arrNums.length)
     operator.push (operators.textContent)
     
 }
+
 )
+
+}
+
+function addOper1 (operators) {
+    operators.addEventListener('click', (e) => {
+    arrNumbers.push(parseInt(arrNums.join('')));
+    console.log(arrNumbers)
+    arrNums.splice(0,arrNums.length)
+    
+}
+
+)
+
 }
 
 
@@ -71,6 +92,8 @@ const recap = document.querySelector('#recap');
 const reload =document.querySelector('#reload')
 const log = document.querySelector('.operation');
 
+// const nums = document.querySelectorAll('.num')
+// console.log(nums)
 const num1 = document.querySelector('#num1');
 const num2 = document.querySelector('#num2');
 const num3 = document.querySelector('#num3');
@@ -81,7 +104,7 @@ const num7 = document.querySelector('#num7');
 const num8 = document.querySelector('#num8');
 const num9 = document.querySelector('#num9');
 const num0 = document.querySelector('#num0');
-
+// console.log(num1)
 
 const sum = document.querySelector('#sum');
 const sub = document.querySelector('#sub');
@@ -91,7 +114,9 @@ const pow = document.querySelector('#pow');
 const powEach = document.querySelector('#powEach');
 const sqtr = document.querySelector('#sqtr');
 
-const arrNums =[]
+let arrNums =[]
+
+const arrNumbers = []
 
 const operator= []
 
@@ -114,16 +139,21 @@ addOper (divi);
 addOper (pow);
 addOper (powEach);
 addOper (sqrt);
+addOper (recap);
+
+
 
 
 btnCalc.addEventListener("click", (eve) => {
-    loadCredentials(saveCredentials(arrNums.join(operator)));
-    log.innerHTML = (arrNums.join(operator));
+    console.log (arrNumbers)
+    console.log (operator)
+    loadCredentials(saveCredentials(arrNumbers.join(operator[0])));
+    log.innerHTML = (arrNumbers.join(operator[0]));
 })
 
 
 recap.addEventListener("click", (eve) => {
-    const resutls = calculator(arrNums)
+    const resutls = calculator(arrNumbers)
     console.log(resutls)
     if (operator[0] === '+') { log.innerHTML = resutls.sum }
     if (operator[0] === '-') {log.innerHTML = resutls.sub }
