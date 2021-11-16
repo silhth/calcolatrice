@@ -105,11 +105,6 @@ p.result {
     align-items: center;
     flex-wrap: wrap;
   
-    /* border: 1px solid; */
-    /* border-radius: 8px;
-    margin: 5px; */
-
-    
 
 }
 
@@ -122,7 +117,6 @@ p.result {
 
 .result__btn button {
     width: 250px;
-    /* margin: 5px; */
     padding: 10px;
 
 }
