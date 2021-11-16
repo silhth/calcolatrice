@@ -8,13 +8,13 @@
     <title>Document</title>
 </head>
 <body>
-    <div class="modal">
-      <h1>CALCOLATRICE</h1>
-      <h2>inserisci i numeri e scegli il tipo di operazione</h2>
 
+ 
+    <div class="modal"> 
 
       <div class="operations">
         <p class="operation"></p>
+        <p class="result"></p>
       </div>
      
       <div class="nums">
@@ -27,24 +27,27 @@
         <button class='num' id="num7">7</button>
         <button class='num' id="num8">8</button>
         <button class='num' id="num9">9</button>
-        <button class='num' id="num0">0</button> 
+        <button class='num' id="num0">0</button>
+        <button class='num' id="num0">00</button>
+        <button class='num' id="num.">.</button>
+
+        
       </div>
 
       <div class="operators">
-        <button id="sum">+</button>
-        <button id="sub">-</button>
-        <button id="mul">*</button>
-        <button id="div">/</button>
-        <button id="pow">**</button>
-        <button id="powEach">**each</button>
-        <button id="sqrt">sqrt</button>
-      </div>
-      <div class="result">
+        <button class="operator" id="sum">+</button>
+        <button class="operator" id="sub">-</button>
+        <button class="operator" id="mul">*</button>
+        <button class="operator" id="div">/</button>
+        <button class="operator" id="pow">**</button>
+        <button class="operator" id="sqrt">sqrt</button>
+        <button class="operator" id="recap"> = </button>
+        <button id="reload">
+          <img src="https://img.icons8.com/external-becris-lineal-becris/64/000000/external-reload-mintab-for-ios-becris-lineal-becris.png"
+          alt="reload" width="20" height="20"/>
+        </button>
 
-        <button id="recap"> = </button>
-        <button id="btnCalc">MOSTRAMI L'OPERAZIONE</button>
-        <button id="reload">ricarice</button>
-      </div>
+     
 
        
       </div>

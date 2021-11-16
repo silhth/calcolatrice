@@ -1,96 +1,128 @@
+*{
+    margin:0;
+    padding:0;
+}
+
+body{
+    height: 100vh;
+    background: linear-gradient(to bottom, #95ffed 0%, #003b62 100%);
+    font-family: 'Open Sans Condensed', sans-serif;
+}
 
 .modal {
     width: 100%;
-    max-width: 500px;
-
-
-    padding: 30px 0 20px;
+    max-width: 350px;
+    
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
   
-    border: 1px solid;
-    border-radius: 8px;
-    margin: 50px auto;
+    border: 3px solid #002136;
+    border-radius: 10px;
+    
+    margin: 100px auto;
+    padding: 25px 0;
+
+    background-color: #153a53;
 }
 .operations {
 
-    width: 300px;
-    height: 50px;
+    width: 304px;
     display: block;
-    text-align: center;
+    margin-bottom: 20px ; 
+}
 
-    border: 1px solid;
-    border-radius: 8px;
-    margin: 5px;
+p.operation {
+    
+    font-size: 14px;
+    width: 100%;
+    max-width: 304px;
+    height: 30px;
+    line-height: 30px;
+    display: block;
+    text-align: right;
+    background-color: rgb(155, 240, 251);
+
+}
+
+p.result {
+    font-size: 18px;
+    width: 100%;
+    max-width: 304px;
+    height: 50px;
+    line-height: 50px;
+    display: block;
+    text-align: right;
+    background-color: rgb(191, 255, 234);
+  
 }
 
 .nums {
     width: 100%;
-    height: 150px;
-    max-width: 300px;
+    height: auto;
+    max-width: 180px;
 
 
-    padding: 30px 0 20px;
+
     display: flex;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
   
-    border: 1px solid;
-    border-radius: 8px;
-    margin: 5px;
-
-    
-
 }
 
-.result {
+.result__btn {
     width: 100%;
     max-width: 300px;
 
     padding: 30px 0 20px;
     display: flex;
-    justify-content: center;
+    justify-content: center; 
     align-items: center;
-    flex-wrap: wrap; 
+    flex-wrap: wrap;
 
 }
 
-.nums button {
-    width: 80px ;
-    margin: 5px;
-    
+ .nums button {
+    width: 60px ;
+    height: 60px ;
+
+    background-color: rgb(200, 200, 197); 
+
+    font-size: 15px;
+   
 }
 
 .operators {
     width: 100%;
-    height: 150px;
-    max-width: 150px;
+    height: auto;
+    max-width: 120px;
 
 
-    padding: 30px 0 20px;
+
     display: flex;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
   
-    border: 1px solid;
-    border-radius: 8px;
-    margin: 5px;
+    /* border: 1px solid; */
+    /* border-radius: 8px;
+    margin: 5px; */
 
     
 
 }
 
 .operators button {
-    width: 50px;
-    margin: 5px;
+    width: 60px ;
+    height: 60px ;
+
+    font-size: 15px;
 }
 
-.result button {
+.result__btn button {
     width: 250px;
-    margin: 5px;
+    /* margin: 5px; */
     padding: 10px;
 
 }
