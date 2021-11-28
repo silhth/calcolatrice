@@ -5,7 +5,7 @@
 
 body{
     height: 100vh;
-    background: linear-gradient(to bottom, #95ffed 0%, #003b62 100%);
+    /* background: linear-gradient(to bottom, #95ffed 0%, #003b62 100%); */
     font-family: 'Open Sans Condensed', sans-serif;
 }
 
@@ -17,13 +17,14 @@ body{
     justify-content: center;
     flex-wrap: wrap;
   
-    border: 3px solid #002136;
+    border: 3px solid #222222;
     border-radius: 10px;
     
     margin: 100px auto;
     padding: 25px 0;
 
-    background-color: #153a53;
+    background-color: #ffffff;
+    box-shadow: 8px 8px 8px;
 }
 .operations {
 
@@ -41,7 +42,7 @@ p.operation {
     line-height: 30px;
     display: block;
     text-align: right;
-    background-color: rgb(155, 240, 251);
+    background-color: rgb(234, 236, 236);
 
 }
 
@@ -53,7 +54,7 @@ p.result {
     line-height: 50px;
     display: block;
     text-align: right;
-    background-color: rgb(191, 255, 234);
+    background-color: rgb(209, 209, 209);
   
 }
 
